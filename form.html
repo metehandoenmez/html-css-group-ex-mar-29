@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="form-data.html">
+    <div class="form-input-container">
+      <label for="">Your Name:</label>
+      <input type="text" required name="fullname" id="fullname">
+      <br>
+      <label for="email">Your email address</label>
+      <input type="email" name="email" id="email" required>
+      <br>
+      <label for="">Will you bring a guest?</label>
+      <select name="hasGuest" id="hasGuest">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      <input type="submit">
+    </div>
+  </form>
+
+  <br><br>
+
+  <form action="form-data.html">
+    <div class="form-input-container">
+      <label for="">Company:</label>
+      <input type="text" name="company">
+      <br>
+      <label for="">Full Name:</label>
+      <input type="text" name="fullname">
+      <br>
+      <label for="">Email Address:</label>
+      <input type="email" name="email">
+      <br>
+      <label for="">Title:</label>
+      <input type="text" name="title">
+      <br>
+      <label for="">Phone:</label>
+      <input type="tel" name="phone">
+      <br>
+      <label for="">Select a date:</label>
+      <input type="date" name="date">
+      <br>
+      <select name="jobfunction" id="">
+        <option value="projectmanager">Project Manager</option>
+        <option value="backenddev">Backend Developer</option>
+        <option value="frontenddev">Frontend Developer</option>
+        <option value="designer">UX/UI Designer</option>
+      </select>
+      <label for="hired">Hired?</label>
+      <input type="text" hidden name="hired" value="off">
+      <input type="checkbox" name="hired" id="hired">
+
+      <br>
+      <label for="expectations"></label>
+      <textarea name="expectations" id="expectations" cols="30" rows="5" minlength="10" required></textarea>
+
+      <br><br>
+      <input type="submit">
+    </div>
+  </form>
+
+  <br><br><br>
+  <a href="index.html">Back Home</a>
+</body>
+
+</html>
